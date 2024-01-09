@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: linear-gradient(to right, rgb(214, 180, 180), rgb(232, 137, 218), rgb(224, 145, 96));
+    
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+.box{
+    background: rgb(235, 122, 248);
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0,1)
+                0 32px -48px rgba(0,0,0,0.5);
+}
+.form-box{
+    width: 450px;
+    margin: 0px 15px;
+}
+.form-box header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(4, 0, 1);
+    margin-bottom: 10px;
+}
+.form-box form .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.form-box form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(249, 4, 4);
+}
+.btn{
+    height: 35px;
+    background: rgba(130, 48, 231, 0.808);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 10px;
+    padding: 0px 10px;
+
+}
+.btn:hover{
+    opacity: 0.85;
+}
+.submit{
+    width: 100%; 
+}
+.link{
+    margin-bottom: 15px;
+}
+
+
+/*********homepage************/
+
+
+.nav{
+   background: rgb(168, 197, 241);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   line-height: 60px;
+   z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 900; 
+}
+.right-links a{
+    padding: 0 10px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.main-box .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bottom{
+    width: 100%;
+    margin-top: 20px;
+}
+@media only screen and (max-width:840px){
+    .main-box .top{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top .box{
+        margin:10px 10px;
+    }
+    .bottom{
+        margin-top: 0;
+    }
+}
